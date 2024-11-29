@@ -14,3 +14,11 @@ Este es el frontend de la aplicación **Library App**, desarrollada con **Next.j
 ```bash
 git clone https://github.com/AngeloJS04/library-app-front.git
 ````
+### 2. Instala las dependencias
+
+Entra en la carpeta del proyecto e instala las dependencias con npm o yarn:
+
+```bash
+cd library-app-front
+npm install
+````
