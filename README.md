@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Library App Frontend
 
-## Getting Started
+Este es el frontend de la aplicación **Library App**, desarrollada con **Next.js**, **Tailwind CSS**, **DaisyUI** y **Redux RTK**. La aplicación permite a los usuarios gestionar libros en una biblioteca, incluyendo autenticación, búsqueda y filtrado de libros, y la visualización de detalles de un libro específico.
 
-First, run the development server:
+## Requisitos
+
+- **Node.js** (versión 14.x o superior)
+- **Yarn** o **npm** (gestores de paquetes)
+
+## Instalación
+
+### 1. Clona el repositorio
 
 ```bash
+git clone https://github.com/AngeloJS04/library-app-front.git
+````
+### 2. Instala las dependencias
+
+Entra en la carpeta del proyecto e instala las dependencias con npm o yarn:
+
+```bash
+cd library-app-front
+npm install
+````
+### 3. Configura las variables de entorno
+```bash
+NEXT_PUBLIC_API_URL=http://localhost:4000
+````
+
+### 4. Inicia el servidor de desarrollo
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+````
+## Características
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Autenticación de usuario**: Los usuarios pueden iniciar sesión con sus credenciales a través de JWT y almacenar la sesion con cookies, tambien pueden registrarse.
+- **Listado de libros**: Los usuarios pueden ver la lista de libros paginados.
+- **Búsqueda de libros**: Los usuarios pueden buscar libros por nombre, año, género o autor.
+- **Filtrado de libros**: Los usuarios pueden aplicar filtros para refinar su búsqueda de libros.
+- **Dark / Light**: Dark y Light mode implementado
+- **Vista de detalles de libros**: Los usuarios pueden ver detalles de un libro específico, como su nombre, autor, año de publicación, género y descripción.
+- **Interfaz moderna y responsiva**: Utiliza **Tailwind CSS** y **DaisyUI** para una experiencia visual atractiva y fácil de usar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologías
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Tecnología      | Descripción                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| **Next.js**     | Framework de React para crear aplicaciones web escalables y optimizadas.    |
+| **Tailwind CSS**| Framework de utilidades CSS para diseñar interfaces rápidamente.           |
+| **DaisyUI**     | Componentes pre-estilizados que se integran con Tailwind CSS para una UI aún más rápida. |
+| **Redux RTK**   | Herramienta para gestionar el estado global de la aplicación de manera eficiente, especialmente en la gestión de peticiones a la API. |
+| **TypeScript**  |  Tipado estático, mejorando la mantenibilidad y escalabilidad del código. |
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  
