@@ -48,7 +48,6 @@ npm run dev
 | **Tailwind CSS**| Framework de utilidades CSS para diseñar interfaces rápidamente.           |
 | **DaisyUI**     | Componentes pre-estilizados que se integran con Tailwind CSS para una UI aún más rápida. |
 | **Redux RTK**   | Herramienta para gestionar el estado global de la aplicación de manera eficiente, especialmente en la gestión de peticiones a la API. |
-| **React Query** | Para la gestión de consultas a la API (si es necesario agregarlo).          |
-| **TypeScript**  | Un superset de JavaScript que agrega tipado estático, mejorando la mantenibilidad y escalabilidad del código. |
+| **TypeScript**  |  Tipado estático, mejorando la mantenibilidad y escalabilidad del código. |
 
   
