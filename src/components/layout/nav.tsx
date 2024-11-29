@@ -4,22 +4,27 @@ import React, { useEffect, useState } from 'react'
 
 const Nav = () => {
     const router = useRouter()
-    const [theme, setTheme] = useState(localStorage!.getItem("theme") ? localStorage.getItem("theme") : 'light')
+    const [theme, setTheme] = useState('light');
 
     useEffect(() => {
-        localStorage.setItem("theme", theme!)
-        const localtheme = localStorage.getItem('theme')
-        document.querySelector("html")?.setAttribute("data-theme", localtheme!)
+        if (typeof window !== 'undefined' && localStorage) {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            }
+        }
+    }, []);
 
+    useEffect(() => {
+        if (typeof window !== 'undefined' && localStorage) {
+            localStorage.setItem('theme', theme);
+            document.querySelector("html")?.setAttribute("data-theme", theme);
+        }
     }, [theme]);
 
-    const handleToggle = (e: any) => {
-        if (e.target.checked) {
-            setTheme("dark");
-        } else {
-            setTheme("light")
-        }
-    }
+    const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setTheme(e.target.checked ? 'dark' : 'light');
+    };
 
     return (
         <div className="navbar bg-blue-700 text-white shadow-xl ">
