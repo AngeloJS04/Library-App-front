@@ -33,7 +33,8 @@ npm run dev
 ````
 ## Características
 
-- **Autenticación de usuario**: Los usuarios pueden iniciar sesión con sus credenciales a través de JWT y almacenar la sesion con cookies.
+- **Autenticación de usuario**: Los usuarios pueden iniciar sesión con sus credenciales a través de JWT y almacenar la sesion con cookies, tambien pueden registrarse.
+- **Listado de libros**: Los usuarios pueden ver la lista de libros paginados.
 - **Búsqueda de libros**: Los usuarios pueden buscar libros por nombre, año, género o autor.
 - **Filtrado de libros**: Los usuarios pueden aplicar filtros para refinar su búsqueda de libros.
 - **Dark / Light**: Dark y Light mode implementado
